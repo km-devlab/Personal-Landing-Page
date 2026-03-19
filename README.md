@@ -16,12 +16,9 @@ A **vibrant and responsive landing page** built purely with **HTML** and **CSS**
 
 ## Live Demo
 Check out the live page here:  
-[View Live Page]([https://yourusername.github.io/your-repo-name/](https://km-devlab.github.io/Personal-Landing-Page/))
+[View Live Page](https://yourusername.github.io/your-repo-name/](https://km-devlab.github.io/Personal-Landing-Page/)
 
 ## Built With
 - HTML  
 - CSS  
 - Google Fonts  
-
-## Author
-Khrisha Mamallan – [Contact Me](mailto:khrisha12@gmail.com)
