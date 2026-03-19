@@ -1,0 +1,393 @@
+/* ============================= */
+/* Reset & Base Styles */
+/* ============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ============================= */
+/* Global Styles */
+/* ============================= */
+
+    body {
+    font-family: "Philosopher", sans-serif;
+    
+    background: linear-gradient(
+        -45deg,
+        #ab0687,
+        #e58f3f,
+        #82105A,
+        #df7a1b
+    );
+
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
+}
+
+
+
+main {
+    flex: 1;
+}
+
+
+/* ============================= */
+/* Header */
+/* ============================= */
+
+header {
+    background-color: #82105A;
+    color: rgb(0, 0, 0);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 8, 0.6);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #DF7A1B;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+    font-size: 1.5rem;
+}
+
+.nav-links a {
+    color: #DF7A1B;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    /* background: linear-gradient(
+        360deg,
+        rgb(171, 6, 135) 0%,
+        rgb(229, 143, 63) 100%
+    ); */
+    background: linear-gradient(
+        360deg,
+        rgb(244, 49, 201) 0%,
+        rgb(248, 237, 94) 100%
+    ); 
+    transform: translateY(-10px);
+    transition: transform 0.5 ease;
+    box-shadow: 0 0 10px 8px rgba(249, 204, 100, 0.6);
+    border-radius: 4px;
+    color: #82105A;
+}
+
+
+/* ============================= */
+/* About Section */
+/* ============================= */
+
+.about {
+    /* background: linear-gradient(360deg, rgb(171, 6, 135) 0%, rgb(229, 143, 63) 100%); */
+    padding: 100px 0 20px 0;
+    text-align: center;
+    /* flex: 1; */
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1rem;
+    color: #323030;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-info {
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.about-img {
+    width: 20rem;
+    height: 20rem;
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid rgb(249, 204, 100);
+    transform: rotate(-3deg);
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 15px 10px rgba(249, 204, 100, 0.6);
+}
+.about-img img:hover{
+    transform: rotate(0deg) scale(1.03);
+}
+
+.about-info p {
+    font-size: 1.3rem;
+    margin: 0 2rem;
+    text-align: justify;
+}
+
+
+/* ============================= */
+/* Button */
+/* ============================= */
+
+button {
+    border: none;
+    outline: 0;
+    padding: 10px;
+    margin: 2rem;
+    font-family: "Philosopher", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #DF7A1B;
+    background-color: #82105A;
+    text-align: center;
+    cursor: pointer;
+    width: 15rem;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: linear-gradient(
+        360deg,
+        rgb(221, 126, 25) 0%,
+        rgb(231, 223, 85) 100%
+    );
+    color: #82105A;
+}
+
+
+/* ============================= */
+/* Skills Section */
+/* ============================= */
+
+.skills-container {
+    display: flex;              /* Arranges items horizontally */
+    justify-content: center;    /* Centers items */
+    flex-wrap: wrap;            /* Allows wrapping */
+    gap: 20px;                  /* Space between boxes */
+    padding: 20px;
+}
+
+.skill-box {
+    background-color: #82105A;
+    border: 2px solid #DF7A1B;
+    border-radius: 8px;         /* Rounded corners */
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    color: #eff966;
+}
+
+.skill-box:hover {
+    transform: translateY(-10px);
+    transition: transform 1s ease;
+    box-shadow: 0 0 15px 8px rgba(249, 204, 100, 0.6);
+}
+
+.tools {
+    align-items: end;
+}
+
+/* ============================= */
+/* Contact Section */
+/* ============================= */
+
+#contact {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.sticky-note {
+    position: relative;
+    background: #fff8a6;
+    /* background: linear-gradient(
+        360deg,
+        rgb(244, 49, 201) 0%,
+        rgb(248, 237, 94) 100%
+    ); */
+    width: 320px;
+    padding: 25px;
+    margin: 40px auto;
+    border-radius: 8px;
+
+    box-shadow: 
+        0 8px 15px rgba(0, 0, 0, 0.2),
+        inset 0 0 20px rgba(0, 0, 0, 0.05);
+
+    transform: rotate(-3deg);
+    transition: transform 0.3s ease;
+}
+
+.sticky-note:hover {
+    transform: rotate(0deg) scale(1.03);
+}
+
+.sticky-note::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-5deg);
+
+    width: 80px;
+    height: 25px;
+
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 4px;
+
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+
+.sticky-note form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sticky-note input,
+.sticky-note textarea {
+    border: none;
+    border-bottom: 2px solid #82105A;
+    background: transparent;
+    font-family: "Philosopher", sans-serif;
+    padding: 8px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.sticky-note textarea {
+    resize: none;
+}
+
+.sticky-note button {
+    margin-top: 10px;
+    background-color: #82105A;
+    color: rgb(227, 236, 61);
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.sticky-note button:hover {
+    background: linear-gradient(
+        360deg,
+        rgb(171, 6, 135) 0%,
+        rgb(229, 143, 63) 100%
+    );
+}
+
+
+
+/* ============================= */
+/* Footer */
+/* ============================= */
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* ============================= */
+/* Responsive Design */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        display: block;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 1rem;
+        justify-content: space-between;
+    }
+
+    .nav-links li {
+        margin-right: 0;
+    }
+
+    .about h1 {
+        font-size: 2rem;
+    }
+
+    .about p {
+        font-size: 0.9rem;
+    }
+
+    .about-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img {
+        width: 60%;
+        height: 60%;
+        margin-bottom: 1rem;
+    }
+
+    .about-info p {
+        margin: 1rem 2rem;
+    }
+
+    .about-info button {
+        margin: 1rem 2rem;
+        width: 10rem;
+    }
+
+    /* .team {
+        margin: 0 1rem;
+    } */
+}
+
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
